@@ -5,6 +5,7 @@ import Aos from "aos"
 import 'aos/dist/aos.css'
 import Services from "./components/Services"
 import About from "./components/About"
+import Specialist from "./components/Specialist"
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Hero />
       <Services />
       <About/>
+      <Specialist/>
     </>
   )
 }

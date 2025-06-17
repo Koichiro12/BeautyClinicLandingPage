@@ -88,8 +88,32 @@ const About = () => {
                                   ))
                               }
                           </section>
+                          <nav>
+                            <a href="#"
+                            className='inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full transition shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'>
+                                Meet our Specialist
+                            </a>
+                          </nav>
                       </div>
                 </article>
+                <aside className='mt-20 bg-white rounded-2xl p-8 md:p-12 shadow-lg relative overflow-hidden'>
+                    <span className="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-blue-500 opacity-40" aria-hidden="true"></span>
+                    <div className="relative z-10">
+                        <h3 className="text-2xl font-bold text-gray-800 mb-6">Our Missions</h3>
+                        <blockquote className='text-lg text-gray-700 mb-6'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </blockquote>
+                        <figure className='flex items-center'>
+                            <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                                <FaUserMd className=' text-blue-500' aria-hidden="true"/>
+                            </div>
+                            <figcaption>
+                                <cite className='font-semibold text-gray-800 not-italic'>Dr.Jhon Doe</cite>
+                                <p className='text-gray-500'>Medical Director & Rector</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </aside>
               </div>
       </section>
       </>
