@@ -1,0 +1,56 @@
+import React from 'react'
+import heroImage from '../assets/img/hero-images.jpg'
+const Hero = () => {
+    const stats = [
+        { value: "2,500+", label: "Happy Customers" },
+        { value: "99+", label: "Specialist" },
+        {value : "99+" ,label:"Treatments"},
+        {value : "10+" ,label:"Years"},
+    ];
+  return (
+      <>
+          <section id='home' className='relative overflow-hidden bg-gradient-to-l from-blue-100 to-purple-100 '>
+              <article className='container mx-auto px-4 py-20 md:py-32 flex flex-col md:flex-row items-center'>
+                  <div className="md:w-1/2 mb-10 md:mb-0">
+                      <hgroup data-aos="fade-up" data-aos-delay="500" >
+                          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">
+                              Enhance your Natural <mark className='text-blue-600 bg-transparent'>Beauty</mark>
+                          </h1>
+                          <p className="text-lg text-gray-600 mb-8 max-w-lg">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                          </p>
+                      </hgroup>
+                      <nav data-aos="fade-up" data-aos-delay="600"  className='flex flex-col sm:flex-row gap-4 mb-12'>
+                          <a href="#appointment" className='bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-center transition shadow-lg' aria-label='Book Appointment'>Book Appointment</a>
+                        <a href="#services" className='border border-blue-500 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-full text-center transition shadow-lg' aria-label='Our Services'>Explore Services</a>
+                      </nav>
+                      <aside data-aos="fade-up" data-aos-delay="700"  className='py-4'>
+                          <ul className="flex flex-wrap justify-center gap-4 md:gap-8 text-center">
+                              {
+                                  stats.map((s, index) => (
+                                      <li key={index} className='px-2'>
+                                          <strong className='text-2xl font-bold text-blue-600'>{s.value}</strong>
+                                          <small className="block text-sm text-gray-600">{ s.label}</small>
+                                      </li>
+                                  ))
+                              }
+                        </ul>
+                      </aside>
+                  </div>
+                  <figure data-aos="fade-up" data-aos-delay="700"  className='md:w-1/2 flex justify-center'>
+                      <div className="relative w-full max-w-md">
+                          <span className="bg-blue-600 rounded-full w-80 h-80 absolute -top-10 -left-10 opacity-20" aria-hidden="true">
+                          </span>
+                          <span className="bg-blue-500 rounded-full w-64 h-64 absolute -bottom-10 -right-10 opacity-20" aria-hidden="true">
+                          </span>
+                          <img src={heroImage} alt='Customer Treatments' className='relative z-10 rounded-full shadow-2xl w-100 h-100 max-w-xs md:max-w-sm object-cover' width={400} height={400} loading='eager'/>
+                      </div>
+                  </figure>
+              </article>
+              
+        </section>
+      </>
+  )
+}
+
+export default Hero
